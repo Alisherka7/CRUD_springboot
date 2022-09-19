@@ -1,0 +1,17 @@
+{{>layout/header}}
+
+<div class="container">
+<form action="/create" method="post">
+    <div class="mb-3">
+        <label for="exampleInputEmail1">제목</label>
+        <input type="text" class="form-control" name="title" id="tema" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1">내용</label>
+        <textarea name="content" class="form-control" placeholder="내용"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+{{>layout/footer}}
