@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class ArticleController {
 
-    @GetMapping("/new/hi")
+    @GetMapping("/article/form")
     public String newArticleForm(){
         return "articles/new";
     }
