@@ -48,3 +48,13 @@
     </div>
 </nav>
 <!-- Navbar end -->
+
+<!-- Alert Msg -->
+{{#msg}}
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+        <strong>{{msg}}!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+{{/msg}}

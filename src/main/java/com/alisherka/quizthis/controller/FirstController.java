@@ -3,6 +3,7 @@ package com.alisherka.quizthis.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class FirstController {
@@ -17,6 +18,11 @@ public class FirstController {
     public String byeBye(Model model){
         model.addAttribute("username", "Ali");
         return "goodbye";
+    }
+
+    @RequestMapping("/hello")
+    public String hello(){
+        return "Hello World";
     }
 
 
