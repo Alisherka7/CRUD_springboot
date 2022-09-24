@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class FirstController {
     // get request link
-    @GetMapping("/hello/hi")
+    @GetMapping("/")
     public String yourName(Model model){
         model.addAttribute("username", "Alisherka");
         return "greetings"; // templates/greetings.mustache -> 브라우저로 전송
